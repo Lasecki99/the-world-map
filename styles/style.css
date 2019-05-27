@@ -1,0 +1,596 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #9D0A10;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+
+div.background {
+    position: relative;
+
+}
+
+div.background img {
+    display: block;
+    opacity: 0.2;
+    width: 100%;
+    min-height: 85vh;
+
+}
+
+ul.navbar-nav {
+    position: absolute;
+    top: 15%;
+    right: 0;
+}
+
+ul.navbar-nav li a {
+    color: white;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+div.countries {
+
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 400px;
+    position: absolute;
+    top: 65%;
+    left: 7%;
+
+}
+
+div.countries p {
+    color: white;
+    flex-basis: 33%;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px;
+}
+
+div.countries p:hover {
+    color: white;
+}
+
+
+div.description {
+    position: absolute;
+    max-width: 36.7%;
+    bottom: 7.5%;
+    right: 17.5%;
+    border: 2px solid white;
+    padding: 20px 50px;
+    padding-top: 30px;
+}
+
+
+div.description p {
+    font-weight: 300;
+    color: white;
+}
+
+div.description h2 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+div.title {
+    position: absolute;
+    top: 33%;
+    left: 6.8%;
+    letter-spacing: 2px;
+}
+
+
+div.title h1 {
+    color: white;
+    font-size: 75px;
+}
+
+
+
+div.positions div p {
+    padding-right: 40px;
+    color: white;
+    font-size: 14px;
+}
+
+div.positions div h3 {
+    padding-right: 40px;
+    color: white;
+    font-size: 25px;
+    text-align: left;
+}
+
+div.positions div span.dott {
+    position: absolute;
+    top: 39%;
+    left: 95%;
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+div.positions div span.underline {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+}
+
+div.background div.ecreo h3 {
+    color: green;
+
+}
+
+div.countries p.ecreo {
+    color: green;
+    font-weight: bold;
+
+}
+
+ul {
+    width: 100%;
+}
+
+nav a img.logo {
+    width: 80%;
+    margin-top: -2px;
+    margin-left: 2px;
+}
+
+nav ul li a {
+    font-size: 10px;
+    color: white !important;
+    font-weight: bold;
+
+}
+
+
+div.first {
+    display: flex;
+    margin-left: 392px;
+    margin-top: 25px;
+    letter-spacing: 2px;
+}
+
+div.second {
+    display: flex;
+    margin-left: 310px;
+    margin-top: 7px;
+    letter-spacing: 2px;
+}
+
+div.second li {
+    padding: 20px;
+}
+
+a.language {
+    margin-left: 30px;
+}
+
+
+
+
+/* Pozycje divow z panstwami */
+
+@keyframes showCountry {
+    0% {
+        transform: scale(1) translate(-100%, -50%)
+    }
+
+    50% {
+        transform: scale(1.5) translate(-100%, -50%)
+    }
+
+    100% {
+        transform: scale(1) translate(-100%, -50%)
+    }
+}
+
+div.positions div {
+    display: none;
+    transform: translate(-100%, -50%);
+    position: absolute;
+    animation: showCountry 1 0.7s;
+}
+
+div.ecreo {
+    top: 19.5%;
+    left: 48.5%;
+}
+
+div.poland {
+    top: 19.5%;
+    left: 48.8%;
+}
+
+div.ireland {
+    top: 19%;
+    left: 45%;
+}
+
+div.turkey {
+    top: 27%;
+    left: 56.6%;
+}
+
+div.rpa {
+    top: 67%;
+    left: 53%;
+}
+
+div.brazil {
+    top: 56%;
+    left: 34%;
+}
+
+div.australia {
+    top: 64%;
+    left: 85%;
+}
+
+div.canada {
+    top: 13%;
+    left: 20%;
+}
+
+div.usa {
+    top: 29%;
+    left: 20%;
+}
+
+div.chile {
+    top: 64%;
+    left: 28.4%;
+}
+
+div.madagaskar {
+    top: 62%;
+    left: 60%;
+}
+
+div.china {
+    top: 30%;
+    left: 75%;
+}
+
+div.niger {
+    top: 40%;
+    left: 48%;
+}
+
+div.india {
+    top: 43%;
+    left: 68.3%;
+}
+
+div.vietnam {
+    top: 42%;
+    left: 76.8%;
+}
+
+@media (max-width:1330px) {
+    nav ul div.first {
+        position: absolute;
+        left: -100px;
+    }
+
+    nav ul div.second {
+        position: absolute;
+        left: 400px;
+        top: -2px;
+
+    }
+}
+
+@media (max-width:1100px) {
+    div.background img {
+        min-height: 66vh;
+    }
+
+    div.title h1 {
+        font-size: 50px;
+    }
+
+    div.countries {
+        bottom: 22%;
+    }
+
+    div.description {
+        padding: 0;
+    }
+
+    div.description h2 {
+        font-size: 20px;
+        padding: 15px 0 0 15px;
+    }
+
+    div.description p {
+        padding: 0 15px;
+        font-size: 15px;
+    }
+
+
+}
+
+
+@media(max-width:1050px) {
+    div.countries {
+        bottom: 25%;
+    }
+
+    nav ul div.first {
+        position: absolute;
+        left: -150px;
+    }
+
+    nav ul div.second {
+        position: absolute;
+        left: 240px;
+        top: -2px;
+
+    }
+
+}
+
+@media (max-width:910px) {
+    nav ul div.first {
+        position: absolute;
+        left: -190px;
+    }
+
+    nav ul div.second {
+        position: absolute;
+        left: 140px;
+        top: -2px;
+
+    }
+}
+
+@media (max-height:830px) {
+    div.countries {
+        bottom: 20%;
+    }
+}
+
+@media (max-width:1350px) and (max-height:830px) {
+    div.countries {
+        bottom: 0%;
+    }
+}
+
+@media (max-height: 760px) {
+    div.countries {
+        bottom: 13%;
+    }
+}
+
+@media (max-height:700px) {
+    div.countries {
+        bottom: 5;
+    }
+}
+
+@media (max-height:600px) {
+    div.title {
+        top: 20%;
+    }
+
+    div.countries {
+        bottom: 0;
+    }
+}
+
+@media (max-width:770px) {
+
+    div.title {
+        top: 14%;
+    }
+
+
+
+    nav a img.logo {
+        max-width: 150px;
+
+    }
+
+    ul.navbar-nav {
+        position: relative;
+    }
+
+    div.background {
+        overflow: scroll;
+    }
+
+    div.background img {
+        width: 300%;
+        max-height: 500px;
+    }
+
+    div.countries {
+        position: absolute;
+        width: 90%;
+        left: 50%;
+        top: 26%;
+        transform: translate(-45%);
+        transition: 0.4s;
+        height: 30%;
+    }
+
+    div.countries.move {
+        top: 73%;
+    }
+
+    div.countries p {
+        font-size: 12px;
+        padding: 0;
+    }
+
+    div.positions div span.dott {
+        height: 5px;
+        width: 5px;
+        left: 98.5%;
+        top: 43%;
+    }
+
+    div.positions div h3 {
+        font-size: 13px;
+    }
+
+    div.positions div p {
+        font-size: 11px;
+    }
+
+    div.positions div.ecreo p,
+    div.positions div.india p {
+        padding: 0;
+    }
+
+    div.positions div.rpa h3 {
+        padding: 0;
+    }
+
+    div.description {
+        bottom: 0%;
+        left: 0%;
+        max-width: 80%;
+        transform: translate(30px, -60px);
+        margin: 0 auto;
+        max-height: 35%;
+        padding: 0;
+    }
+
+    div.description p {
+        font-size: 14px;
+        padding: 0 14px;
+        text-align: center;
+    }
+
+    div.description h2 {
+        padding-top: 10px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    ul {
+        width: 100%;
+    }
+
+    nav a img.logo {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    nav ul li a {
+        font-size: 10px;
+        color: white !important;
+        font-weight: bold;
+    }
+
+
+
+    div.first {
+        position: static;
+        width: 90%;
+        transform: translate(-200px, -40px);
+    }
+
+    div.second {
+        position: static;
+        width: 90%;
+        transform: translate(-450px, 0px)
+    }
+
+    div.second li {
+        padding: 10px;
+    }
+
+    a.language {
+        margin-left: 0px;
+    }
+
+    li.technology {
+        margin-left: 0px;
+    }
+
+
+    /* Pozycje państw pod width: 300% (30% widocznej mapy + reszta na scrollu)  */
+
+    div.ecreo {
+        left: 146%;
+    }
+
+    div.turkey {
+        left: 153.6%;
+    }
+
+    div.poland {
+        left: 145.8%;
+    }
+
+    div.ireland {
+        left: 134%;
+    }
+
+    div.rpa {
+        left: 160%;
+    }
+
+    div.brazil {
+        left: 100%;
+    }
+
+    div.australia {
+        left: 250%;
+    }
+
+    div.canada {
+        left: 60%;
+    }
+
+    div.usa {
+        left: 62%;
+    }
+
+    div.chile {
+        left: 85%;
+    }
+
+    div.madagaskar {
+        left: 180%;
+    }
+
+    div.china {
+        left: 230%;
+    }
+
+    div.niger {
+        left: 148%;
+    }
+
+    div.india {
+        left: 204.5%;
+    }
+
+    div.vietnam {
+        left: 230%;
+    }
+
+
+
+
+}
