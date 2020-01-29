@@ -8,13 +8,11 @@ body {
     background-color: #9D0A10;
     height: 100vh;
     overflow: hidden;
-
 }
 
 
 div.background {
     position: relative;
-
 }
 
 div.background img {
@@ -22,7 +20,6 @@ div.background img {
     opacity: 0.2;
     width: 100%;
     min-height: 85vh;
-
 }
 
 ul.navbar-nav {
@@ -40,14 +37,12 @@ ul.navbar-nav li a {
 }
 
 div.countries {
-
     display: flex;
     flex-wrap: wrap;
     max-width: 400px;
     position: absolute;
     top: 65%;
     left: 7%;
-
 }
 
 div.countries p {
@@ -62,7 +57,6 @@ div.countries p:hover {
     color: white;
 }
 
-
 div.description {
     position: absolute;
     max-width: 36.7%;
@@ -72,7 +66,6 @@ div.description {
     padding: 20px 50px;
     padding-top: 30px;
 }
-
 
 div.description p {
     font-weight: 300;
@@ -92,13 +85,10 @@ div.title {
     letter-spacing: 2px;
 }
 
-
 div.title h1 {
     color: white;
     font-size: 75px;
 }
-
-
 
 div.positions div p {
     padding-right: 40px;
@@ -131,15 +121,13 @@ div.positions div span.underline {
     background-color: white;
 }
 
-div.background div.ecreo h3 {
+div.background div.ja h3 {
     color: green;
-
 }
 
-div.countries p.ecreo {
+div.countries p.ja {
     color: green;
     font-weight: bold;
-
 }
 
 ul {
@@ -156,9 +144,7 @@ nav ul li a {
     font-size: 10px;
     color: white !important;
     font-weight: bold;
-
 }
-
 
 div.first {
     display: flex;
@@ -181,9 +167,6 @@ div.second li {
 a.language {
     margin-left: 30px;
 }
-
-
-
 
 /* Pozycje divow z panstwami */
 
@@ -208,7 +191,7 @@ div.positions div {
     animation: showCountry 1 0.7s;
 }
 
-div.ecreo {
+div.ja {
     top: 19.5%;
     left: 48.5%;
 }
@@ -472,7 +455,7 @@ div.vietnam {
         font-size: 11px;
     }
 
-    div.positions div.ecreo p,
+    div.positions div.ja p,
     div.positions div.india p {
         padding: 0;
     }
@@ -547,7 +530,7 @@ div.vietnam {
 
     /* Pozycje państw pod width: 300% (30% widocznej mapy + reszta na scrollu)  */
 
-    div.ecreo {
+    div.ja {
         left: 146%;
     }
 
